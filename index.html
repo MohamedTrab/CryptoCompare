@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Crypto Compare</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Crypto Compare</h1>
+    <div>
+      <label for="crypto">Cryptomonnaie:</label>
+      <select id="crypto">
+        <option value="">Sélectionnez une cryptomonnaie</option>  
+        <option value="BTC">BTC</option>
+        <option value="ETH">ETH</option>
+        <option value="XRP">XRP</option>
+        <option value="LTC">LTC</option>.
+        <option value="BNB">BNB</option>
+      </select>
+    </div>
+    <div>
+      <label for="currency">Devise:</label>
+      <select id="currency">
+        <option value="">Sélectionnez une devise</option> 
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="JPY">JPY</option>
+        <option value="CAD">CAD</option>
+      </select>
+    </div>
+    <div>
+      <button id="fetch-data" disabled>Obtenir des informations depuis l'API</button>
+    </div>
+
+    
+      
+    
+    <div id="result">
+      <h2>Crypto-monnaie</h2>
+      <p id="crypto-name"></p>
+      <h2>Monnaie de comparaison</h2>
+      <p id="currency-name"></p>  
+      <h2>Prix</h2>
+      <p id="price"></p>
+      <h2>Volume 24 heures</h2>
+      <p id="volume"></p>
+      <h2>Dernière mise à jour</h2>
+      <p id="last-update"></p>
+      <h2>Image</h2>
+      <img id="image-url">
+    </div>
+    <div class="creator-section">
+        <h2>Créé par [Mohamed elli Iheb Ayoutta]</h2>
+        <p>© 2023 Crypto Compare</p>
+    </div>
+  
+    <script src="script.js"></script>
+  </body>
+</html>
