@@ -6,36 +6,35 @@
   </head>
   <body>
     <h1>Crypto Compare</h1>
-    <div>
-      <label for="crypto">Cryptomoneda:</label>
-      <select id="crypto">
-        <option disabled selected>Seleccione una moneda</option>  
-        <option value="BTC">BTC</option>
-        <option value="ETH">ETH</option>
-        <option value="XRP">XRP</option>
-        <option value="LTC">LTC</option>.
-        <option value="BNB">BNB</option>
-      </select>
+    <div style="display:flex;justify-content:space-between;">
+      <div>
+        <label for="crypto">Cryptomoneda:</label>
+        <select id="crypto">
+          <option disabled selected>Seleccione una moneda</option>  
+          <option value="BTC">BTC</option>
+          <option value="ETH">ETH</option>
+          <option value="XRP">XRP</option>
+          <option value="LTC">LTC</option>.
+          <option value="BNB">BNB</option>
+        </select>
+      </div>
+      <div>
+        <label for="currency">Divisa:</label>
+        <select id="currency">
+          <option disabled selected>Seleccione una devisa</option> 
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="JPY">JPY</option>
+          <option value="CAD">CAD</option>
+          <option value="TND">TND</option>
+        </select>
+      </div>
+      <div>
+        <button id="fetch-data" disabled>Obtener Cotizacion</button>
+      </div>
     </div>
-    <div>
-      <label for="currency">Devisa:</label>
-      <select id="currency">
-        <option disabled selected>Seleccione una devisa</option> 
-        <option value="USD">USD</option>
-        <option value="EUR">EUR</option>
-        <option value="GBP">GBP</option>
-        <option value="JPY">JPY</option>
-        <option value="CAD">CAD</option>
-        <option value="TND">TND</option>
-      </select>
-    </div>
-    <div>
-      <button id="fetch-data" disabled>Obtener Cotizacion</button>
-    </div>
-
-    
-      
-    
+    <div class="separator"></div>
     <div id="result">
       <h2>Crypto-moneda</h2>
       <p id="crypto-name"></p>
