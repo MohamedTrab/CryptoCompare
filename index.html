@@ -7,9 +7,9 @@
   <body>
     <h1>Crypto Compare</h1>
     <div>
-      <label for="crypto">Cryptomonnaie:</label>
+      <label for="crypto">Cryptomoneda:</label>
       <select id="crypto">
-        <option value="">Sélectionnez une cryptomonnaie</option>  
+        <option disabled selected>Seleccione una moneda</option>  
         <option value="BTC">BTC</option>
         <option value="ETH">ETH</option>
         <option value="XRP">XRP</option>
@@ -20,7 +20,7 @@
     <div>
       <label for="currency">Devise:</label>
       <select id="currency">
-        <option value="">Sélectionnez une devise</option> 
+        <option disabled selected>Seleccione una devisa</option> 
         <option value="USD">USD</option>
         <option value="EUR">EUR</option>
         <option value="GBP">GBP</option>
@@ -30,29 +30,35 @@
       </select>
     </div>
     <div>
-      <button id="fetch-data" disabled>Obtenir des informations depuis l'API</button>
+      <button id="fetch-data" disabled>Obtener Cotizacion</button>
     </div>
 
     
       
     
     <div id="result">
-      <h2>Crypto-monnaie</h2>
+      <h2>Crypto-moneda</h2>
       <p id="crypto-name"></p>
-      <h2>Monnaie de comparaison</h2>
+      <h2>Moneda</h2>
       <p id="currency-name"></p>  
-      <h2>Prix</h2>
+      <h2>Precio</h2>
       <p id="price"></p>
-      <h2>Volume 24 heures</h2>
+      <h2>Volumen 24 horas</h2>
       <p id="volume"></p>
-      <h2>Dernière mise à jour</h2>
+      <h2>Ultima actualizacion</h2>
       <p id="last-update"></p>
-      <h2>Image</h2>
+      <h2>Imagen</h2>
       <img id="image-url">
     </div>
     <div class="creator-section">
-        <h2>Créé par [Mohamed Trabelsi]</h2>
-        <p>© 2023 Crypto Compare</p>
+      <h2>Creado por Mohamed Trabelsi</h2>
+    </div>
+    <div class="info-section">
+      <h2>Información proporcionada por <a href="https://www.cryptocompare.com/">Crypto Compare</a>© 2023</h2>
+    </div>    
+    <div class="info-section">
+      <p>Matéria: Redes y Sistemas Web</p>
+      <h2><a href="mailto:Mohamed.trabelsi@alumno.ucjc.edu">Contactanos</a><h2>
     </div>
   
     <script src="script.js"></script>

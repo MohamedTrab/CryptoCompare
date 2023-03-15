@@ -38,7 +38,7 @@ const fetchData = async () => {
     volumeParagraph.textContent = coinData.VOLUME24HOURTO;
     const lastUpdateDate = new Date(coinData.LASTUPDATE * 1000);
     const formattedDate = formatDate(lastUpdateDate);
-    lastUpdateParagraph.textContent = `Dernière mise à jour le ${formatDate()}`;
+    lastUpdateParagraph.textContent = `Ultima actualizacion el  ${formatDate()}`;
     imageUrl.src = `https://cryptocompare.com${coinData.IMAGEURL}`;
     document.getElementById("crypto-name").textContent = `${crypto}`;
     document.getElementById("currency-name").textContent = `${currency}`;
